@@ -1,0 +1,40 @@
+.product__form {
+    width: 47.5%;
+  }
+  
+  .product__form input {
+    padding: 8px 15px;
+    border: 2px solid #0000002a;
+    color: #7c8a97;
+    width: 100%;
+  }
+  
+  .product__form select,
+  .textarea {
+    width: 100%;
+    padding: 10px 15px;
+    color: #7c8a97;
+    border: 10px solid #f104042a;
+    border-radius: 50px;
+  }
+
+  .required-field::before {
+    content: "*";
+    color: red;
+    float: right;
+  }
+  
+  .product__form button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #000d6b;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  
+  .textarea:focus,
+  .product__form input:focus,
+  .product__form select:focus {
+    outline: none;
+  }
