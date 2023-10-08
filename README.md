@@ -21,30 +21,30 @@ Before you begin, make sure you have the following software installed on your sy
    git clone https://github.com/AjayNavgire/inventory_management.git
 
 
-# Navigate to the project directory
+### Navigate to the project directory
    cd inventory_management
 
 
-# Install server dependencies
+### Install server dependencies
    cd backend
    npm install dotenv express mongoose nodemon 
 
-# Install client dependencies
-   cd ../frontend
+### Install client dependencies
+   cd ../frontend/inventory_app
    npm install
 
 ## Running the Application
    Open two terminal in vs code or any coding tool
 
-# In first terminal Start the server:
-# From the 'backend' directory
+### In first terminal Start the server:
+### From the 'backend' directory
     cd ./backend
-    node server.js
+    npm start
     The server will run on http://localhost:4000.
 
-# In Second terminal Start the React App:
-# From the 'frontend' directory
-    cd ./frontend
+### In Second terminal Start the React App:
+### From the 'frontend' directory
+    cd ./frontend/inventory_app
     npm start
     The React app will run on http://localhost:3000.
 
@@ -53,18 +53,14 @@ You can add grocery items to the inventory by entering the item name and quantit
 
 The added items will be displayed in a list side the input fields.
 
-
-
-
-
-
-
-
+### Please check below image
+This image show final UI views
+![Alt text](image.png)
 
 # API Endpoints
-# POST http://localhost:4000/api/v1/product/new : Adds a product item to the inventory.
+ POST http://localhost:4000/api/v1/product/new : Adds a product item to the inventory.
 
-# Example request body:
+ Example request body:
 {
   "name"     : "Mango",
   "category" : "Fruits",
@@ -73,7 +69,7 @@ The added items will be displayed in a list side the input fields.
   "price"    : 100
 }
 
-# GET http://localhost:4000/api/v1/products : Retrieves a list of all product items in the inventory.
+ GET http://localhost:4000/api/v1/products : Retrieves a list of all product items in the inventory.
 
 # Testing the Endpoints
 You can use tools like Postman or curl to test the API endpoints manually.
